@@ -25,3 +25,12 @@ def test():
     x = 20 # unboundlocal error, because x is assigned a value inside the function, it is considered a local variable, but it is referenced before assignment
 
 test()
+
+# 3rd Debugging example
+for i in range(5):
+    pass # loop runs but does nothing
+
+print(i)  # Output: 4, because the loop variable i is still accessible after the loop ends
+
+# 4th Debugging example
+print(bool('False'))  # Output: True, because non-empty strings are considered True in Python
